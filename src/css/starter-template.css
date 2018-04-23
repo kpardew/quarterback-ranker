@@ -1,0 +1,21 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+table, tr, th, td {
+   padding: 3px;
+}
+table, tr, th, td {
+   border: 1px solid;
+}
+
+th {
+   text-align: center;
+}
+
+form {
+   text-align: left;
+}
