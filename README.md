@@ -5,7 +5,14 @@ ESPN [identified](http://www.espn.com/college-football/story/_/id/9612585/total-
 
 Using the [provided](/sql/table_insertions.sql) sql insertion statements, a MySQL database can be pre-populated with the results from the first 13 weeks of the 2015 season. The user has the ability to add new quarterbacks, assign them to teams, and enter their performances in the games they played in during the season. The user can also create a new team and enter that team’s performance for the 2015 season. Finally the user can enter in the final results of the 2015 Pac-12 championship game, which was played on December 5th.
 
-This data
+## TER Calculation
+* Passing Efficiency: ((8.4 * Passing Yards) + (330 * Passing Touchdowns) - (200 * Interceptions) + (100 * Completions)) / Passing Attempts
+* Rushing Efficiency: ((8.4 * Rushing Yards) + (330 * Rushing Touchdowns)) / Rushing Attempts
+* Total Efficiency: ((Passing Efficiency * 4) + Rushing Efficiency) / 5
+* Point %: Total Player Points / Total Team Points
+* Win %: Team Wins / Games Played
+* Raw TER: Total Efficiency * Point %
+* Adjusted TER: Raw TER * Win %
 
 ## ER Diagram
 ![ER Diagram](/images/er.png)
